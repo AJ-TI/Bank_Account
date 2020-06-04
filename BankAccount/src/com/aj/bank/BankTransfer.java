@@ -1,5 +1,6 @@
 package com.aj.bank;
 
+import com.aj.bank.Bank;
 
 public class BankTransfer {
 
@@ -27,7 +28,10 @@ public class BankTransfer {
     }
 
     public void showBalance2() {
-        System.out.println("Yor actual balance is: " + getBalance());
+        System.out.println("Yor actual " + getName2() + " balance is: " + getBalance());
     }
 
+    public String getName2() {
+        return name;
+    }
 }

@@ -13,10 +13,7 @@ public class Bank {
     public double getBalance() {
         return balance;
     }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
+    public String getName() { return name; }
 
     public String deposit(double money) {
         balance += money;
@@ -32,6 +29,6 @@ public class Bank {
     }
 
     public void showBalance() {
-        System.out.println("Your actual balance is: " + getBalance());
+        System.out.println("Your actual " + getName() + " balance is: " + getBalance());
     }
 }
